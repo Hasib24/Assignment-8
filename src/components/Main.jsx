@@ -11,16 +11,43 @@ const Main = () => {
         .then(posts => setPosts(posts))
     }, [])
 
-    const markAsReadHandler = (id, title) =>{
-        let newBookMarkArray = {id , title}
-        setBookMarkArray([...bookMarkArray, newBookMarkArray])
+    const bookMarkHandler = (id, title) =>{
+
+        let newBookMarkArray = {id , title};
+
+        if(bookMarkArray.length === 0){
+            setBookMarkArray([...bookMarkArray, newBookMarkArray]);
+
+        }
+        if(bookMarkArray.length > 0){
+            // console.log(bookMarkArray.length);
+            for(const singleMark of bookMarkArray){
+
+                // console.log(singleMark.id);
+                if(singleMark.id === id){
+                    console.log(`matched id`);
+                }
+                if(singleMark.id !== id){
+                    console.log(`id not matched and bookmark set`);
+                    setBookMarkArray([...bookMarkArray, newBookMarkArray])
+                }
+                console.log(bookMarkArray);
+            }
+        }
+        
+  
+        
+        
         
     }
+
+
+    
     // console.log(bookMark);
 
     return (
         <div className='grid grid-cols-12'>
-            <Blog posts={posts} markAsReadHandler={markAsReadHandler}></Blog>
+            <Blog posts={posts} bookMarkHandler={bookMarkHandler}></Blog>
             <Bookmark bookMarkArray={bookMarkArray}></Bookmark>
         </div>
     );
