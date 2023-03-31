@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaRegBookmark } from 'react-icons/fa';
 
 const Post = ({post}) => {
     // console.log(post);
@@ -26,6 +27,7 @@ const Post = ({post}) => {
                     <span className='px-3 py-1 hover:underline cursor-pointer mr-2 text-slate-500 bg-slate-50 border rounded-3xl'>#{hashTag2}</span>
                 </p>
             </div>
+            <FaRegBookmark/>
         </div>
     );
 };
