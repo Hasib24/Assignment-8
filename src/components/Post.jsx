@@ -6,7 +6,7 @@ const Post = ({post}) => {
     let {id, author, authorPic, date, requiredTime, title, img, hashTag} = post;
     let [hashTag1, hashTag2] = hashTag;
     return (
-        <div className='border p-5'>
+        <div className='p-5'>
             <img className='rounded' src={img} alt="" />
             <div className='flex justify-between items-center py-5 px-2 my-5 border'>
                 {/* header div of each post */}
@@ -18,7 +18,10 @@ const Post = ({post}) => {
                     </div>
                 </div>
                 {/* time required  */}
-                <div className='text-slate-500'>{requiredTime} min</div>
+                <div className='flex'>
+                    <div className='text-slate-500 mr-4'>{requiredTime} min </div>
+                    <button><FaRegBookmark/></button>
+                </div>
             </div>
             <div>
                 <h1 className='text-3xl font-bold'>{title}</h1>
@@ -27,7 +30,8 @@ const Post = ({post}) => {
                     <span className='px-3 py-1 hover:underline cursor-pointer mr-2 text-slate-500 bg-slate-50 border rounded-3xl'>#{hashTag2}</span>
                 </p>
             </div>
-            <FaRegBookmark/>
+            <button className='font-bold text-blue-500 underline'>Mark as read</button>
+            
         </div>
     );
 };
