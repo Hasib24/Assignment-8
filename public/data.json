@@ -3,44 +3,55 @@
         "id": 1,
         "author": "Mr. Raju",
         "authorPic" : "https://images.pexels.com/photos/928364/pexels-photo-928364.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "date": "March 20, 2013",
+        "date": "March 30, 2013",
         "requiredTime": 15,
-        "title" : "1 How to get your first job as a self-taught programmer",
+        "title" : "What is web development and where from you should start",
         "img": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "hashTag" : [ "first hash tex", "secont teg" ]
+        "hashTag" : [ "web devlopment", "freelancing" ]
 
     },
     {
         "id": 2,
-        "author": "Mr. Hasib",
+        "author": "Hasib Islam",
         "authorPic": "https://images.pexels.com/photos/7752850/pexels-photo-7752850.jpeg?auto=compress&cs=tinysrgb&w=600",
         "date": "March 20, 2013",
         "requiredTime": 4,
-        "title" : "2 How to get your first job as a self-taught programmer",
+        "title" : "Dose software engineering and web development make same sance",
         "img": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "hashTag" : [ "first hash tex", "secont teg" ]
+        "hashTag" : [ "Software", "Programming" ]
 
     },
     {
         "id": 3,
-        "author": "Mr. Hasib",
-        "authorPic": "https://images.pexels.com/photos/7752850/pexels-photo-7752850.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "date": "March 20, 2013",
+        "author": "Limon Ahamed",
+        "authorPic": "https://images.pexels.com/photos/7562139/pexels-photo-7562139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "date": "Jannuary 20, 2013",
         "requiredTime": 10,
-        "title" : "3 How to get your first job as a self-taught programmer",
-        "img": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "hashTag" : [ "first hash tex", "secont teg" ]
+        "title" : "What do you thing about programming, does Chat GPT grap devlopers job",
+        "img": "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "hashTag" : [ "Chat GPT", "Programming future" ]
 
     },    
     {
         "id": 4,
-        "author": "Mr. Hasib",
-        "authorPic": "https://images.pexels.com/photos/7752850/pexels-photo-7752850.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "date": "March 20, 2013",
+        "author": "Joy Day",
+        "authorPic": "https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "date": "July 20, 2022",
         "requiredTime": 7,
-        "title" : "4 How to get your first job as a self-taught programmer",
-        "img": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "hashTag" : [ "first hash tex", "secont teg" ]
+        "title" : "Web development and future of javaScript in job market",
+        "img": "https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "hashTag" : [ "Job market", "javaScript" ]
+
+    },
+    {
+        "id": 5,
+        "author": "Rajibul Kawser",
+        "authorPic": "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "date": "February 12, 2022",
+        "requiredTime": 13,
+        "title" : "How to get your first job as a self-taught programmer",
+        "img": "https://images.pexels.com/photos/230324/pexels-photo-230324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "hashTag" : [ "Programming", "Software" ]
 
     }
 ]

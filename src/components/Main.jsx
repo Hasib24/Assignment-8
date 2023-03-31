@@ -34,12 +34,7 @@ const Main = () => {
                 }
                 console.log(bookMarkArray);
             }
-        }
-        
-  
-        
-        
-        
+        }      
     }
 
 
