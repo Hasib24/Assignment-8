@@ -1,56 +1,56 @@
 [
     {
         "id": 1,
-        "author": "Mr. Raju",
-        "authorPic" : "https://images.pexels.com/photos/928364/pexels-photo-928364.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "date": "March 30, 2013",
-        "requiredTime": 15,
-        "title" : "What is web development and where from you should start",
-        "img": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "authorName": "Mr. Raju",
+        "authorImage" : "https://images.pexels.com/photos/928364/pexels-photo-928364.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "publishDate": "March 30, 2013",
+        "readTime": 15,
+        "blogTitle" : "What is web development and where from you should start",
+        "blogCoverImage": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "hashTag" : [ "web devlopment", "freelancing" ]
 
     },
     {
         "id": 2,
-        "author": "Hasib Islam",
-        "authorPic": "https://images.pexels.com/photos/7752850/pexels-photo-7752850.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "date": "March 20, 2013",
-        "requiredTime": 4,
-        "title" : "Dose software engineering and web development make same sance",
-        "img": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "authorName": "Hasib Islam",
+        "authorImage": "https://images.pexels.com/photos/7752850/pexels-photo-7752850.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "publishDate": "March 20, 2013",
+        "readTime": 4,
+        "blogTitle" : "Dose software engineering and web development make same sance",
+        "blogCoverImage": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "hashTag" : [ "Software", "Programming" ]
 
     },
     {
         "id": 3,
-        "author": "Limon Ahamed",
-        "authorPic": "https://images.pexels.com/photos/7562139/pexels-photo-7562139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "date": "Jannuary 20, 2013",
-        "requiredTime": 10,
-        "title" : "What do you thing about programming, does Chat GPT grap devlopers job",
-        "img": "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "authorName": "Limon Ahamed",
+        "authorImage": "https://images.pexels.com/photos/7562139/pexels-photo-7562139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "publishDate": "Jannuary 20, 2013",
+        "readTime": 10,
+        "blogTitle" : "What do you thing about programming, does Chat GPT grap devlopers job",
+        "blogCoverImage": "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "hashTag" : [ "Chat GPT", "Programming future" ]
 
     },    
     {
         "id": 4,
-        "author": "Joy Day",
-        "authorPic": "https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "date": "July 20, 2022",
-        "requiredTime": 7,
-        "title" : "Web development and future of javaScript in job market",
-        "img": "https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "authorName": "Joy Day",
+        "authorImage": "https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "publishDate": "July 20, 2022",
+        "readTime": 7,
+        "blogTitle" : "Web development and future of javaScript in job market",
+        "blogCoverImage": "https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "hashTag" : [ "Job market", "javaScript" ]
 
     },
     {
         "id": 5,
-        "author": "Rajibul Kawser",
-        "authorPic": "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "date": "February 12, 2022",
-        "requiredTime": 13,
-        "title" : "How to get your first job as a self-taught programmer",
-        "img": "https://images.pexels.com/photos/230324/pexels-photo-230324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "authorName": "Rajibul Kawser",
+        "authorImage": "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "publishDate": "February 12, 2022",
+        "readTime": 13,
+        "blogTitle" : "How to get your first job as a self-taught programmer",
+        "blogCoverImage": "https://images.pexels.com/photos/230324/pexels-photo-230324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "hashTag" : [ "Programming", "Software" ]
 
     }
