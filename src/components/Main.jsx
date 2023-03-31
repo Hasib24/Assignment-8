@@ -48,7 +48,7 @@ const Main = () => {
     // console.log(bookMark);
 
     return (
-        <div className='grid grid-cols-12'>
+        <div className='md:grid md:grid-cols-12'>
             <Blog posts={posts} bookMarkHandler={bookMarkHandler} markAsReadHandler={markAsReadHandler}></Blog>
             <Bookmark bookMarkArray={bookMarkArray} timeSpent={timeSpent}></Bookmark>
         </div>
