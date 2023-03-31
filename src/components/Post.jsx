@@ -1,13 +1,17 @@
 import React from 'react';
 import { FaRegBookmark } from 'react-icons/fa';
 
-const Post = ({post, bookMarkHandler}) => {
+const Post = ({post, bookMarkHandler, markAsReadHandler}) => {
     // console.log(post);
     let {id, author, authorPic, date, requiredTime, title, img, hashTag} = post;
     let [hashTag1, hashTag2] = hashTag;
 
     const bookMarkBtn = (id, title) =>{
         bookMarkHandler(id , title);
+    }
+
+    const markAsReadBtn = (time) =>{
+        markAsReadHandler(time)
     }
     return (
         <div className='p-5'>
@@ -34,7 +38,7 @@ const Post = ({post, bookMarkHandler}) => {
                     <span className='px-3 py-1 hover:underline cursor-pointer mr-2 text-slate-500 bg-slate-50 border rounded-3xl'>#{hashTag2}</span>
                 </p>
             </div>
-            <button className='font-bold text-blue-500 underline' >Mark as read</button>
+            <button className='font-bold text-blue-500 underline' onClick={()=>{markAsReadBtn(requiredTime)}} >Mark as read</button>
             
         </div>
     );

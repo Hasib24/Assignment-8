@@ -5,6 +5,7 @@ import Bookmark from './Bookmark';
 const Main = () => {
     let [posts, setPosts] = useState([]);
     let [bookMarkArray, setBookMarkArray] = useState([]);
+    let [timeSpent, setTimeSpent] = useState(0);
     useEffect( ()=>{
         fetch('data.json')
         .then(res => res.json())
@@ -42,13 +43,19 @@ const Main = () => {
     }
 
 
+    const markAsReadHandler = (time) =>{
+        console.log(time);
+        setTimeSpent(timeSpent + time)
+    }
+
+
     
     // console.log(bookMark);
 
     return (
         <div className='grid grid-cols-12'>
-            <Blog posts={posts} bookMarkHandler={bookMarkHandler}></Blog>
-            <Bookmark bookMarkArray={bookMarkArray}></Bookmark>
+            <Blog posts={posts} bookMarkHandler={bookMarkHandler} markAsReadHandler={markAsReadHandler}></Blog>
+            <Bookmark bookMarkArray={bookMarkArray} timeSpent={timeSpent}></Bookmark>
         </div>
     );
 };
