@@ -16,7 +16,7 @@ const Post = ({post, bookMarkHandler, markAsReadHandler}) => {
     return (
         <div className='p-5'>
             <img className='rounded' src={blogCoverImage} alt="" />
-            <div className='flex justify-between items-center py-5 px-2 my-5 border'>
+            <div className='flex justify-between items-center py-5 px-2 my-5'>
                 {/* header div of each post */}
                 <div className='flex items-center'>
                     <img className='w-14 rounded-full mr-3' src={authorImage} alt="" />
