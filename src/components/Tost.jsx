@@ -6,7 +6,6 @@ import React from 'react';
 
 
 const Tost = (props) => {
-    
     //   let style = {props.tost};
     //   console.log(props.tost);
     return (
@@ -20,8 +19,6 @@ const Tost = (props) => {
     );
 };
 
-
-
 const TostWarn = (props) => {
     return (
         <div style={props.tostWarn} className='transition delay-150 duration-300'>
@@ -33,7 +30,5 @@ const TostWarn = (props) => {
         </div>
     );
 };
-
-
 
 export {Tost, TostWarn};

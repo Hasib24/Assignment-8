@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {Tost, TostWarn} from './Tost';
 
 const Bookmark = ({bookMarkArray, timeSpent, tost, tostWarn}) => {
     // console.log(bookMarkArray);
-    
-
-
     
     return (
         <div className='col-span-4 px-2 sticky top-0 h-screen'>
@@ -16,14 +13,10 @@ const Bookmark = ({bookMarkArray, timeSpent, tost, tostWarn}) => {
                 <div>
                     {bookMarkArray.map(singleBookMark =><p key={singleBookMark.id} className='bg-white my-2 p-5 rounded-md'>{singleBookMark.title}</p>)}
                     {/* <p className='bg-white my-2 p-5 rounded-md'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                    <p className='bg-white my-2 p-5 rounded-md'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                    <p className='bg-white my-2 p-5 rounded-md'>Master Microsoft Power Platform and Become an In-Demand!</p>
                     <p className='bg-white my-2 p-5 rounded-md'>Master Microsoft Power Platform and Become an In-Demand!</p> */}
 
                 </div>
-                
             </div>
-            
         </div>
     );
 };
