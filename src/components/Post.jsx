@@ -27,7 +27,7 @@ const Post = ({post, bookMarkHandler, markAsReadHandler}) => {
                 </div>
                 {/* time required and bookmark  */}
                 <div className='flex'>
-                    <div className='text-slate-500 mr-4'>{readTime} min </div>
+                    <div className='text-slate-500 mr-4'>{readTime} min read </div>
                     <button  onClick={()=>{bookMarkBtn(id, blogTitle)}}><FaRegBookmark/></button>
                 </div>
             </div>
