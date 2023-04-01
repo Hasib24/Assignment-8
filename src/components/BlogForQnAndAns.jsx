@@ -37,14 +37,14 @@ const BlogForQnAndAns = () => {
             <div className='mb-3 px-2'>
                 <h2 className='font-bold text-2xl'> What are the purpose of useEffect other than fetching data ?</h2>
                 <p>
-                Some common use cases for useEffect that don't involve fetching data:
-                <ul className='ml-5'>
-                    <li>Updating the document title</li>
-                    <li>Adding event listeners</li>
-                    <li>Managing timers and intervals</li>
-                    <li>Managing animations</li>
-                    <li>Modifying the DOM based on dependencies</li>
-                </ul>
+                Some common use cases for useEffect that don't involve fetching data: <br />
+                
+                    Updating the document title <br />
+                    Adding event listeners <br />
+                    Managing timers and intervals <br />
+                    Managing animations <br />
+                    Modifying the DOM based on dependencies
+                
 
                 </p>
 

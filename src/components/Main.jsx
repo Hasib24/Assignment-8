@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Blog from './Blog';
 import Bookmark from './Bookmark';
 
+
 const Main = () => {
     let [posts, setPosts] = useState([]);
     let [bookMarkArray, setBookMarkArray] = useState([]);
@@ -11,6 +12,26 @@ const Main = () => {
         .then(res => res.json())
         .then(posts => setPosts(posts))
     }, [])
+
+
+    // for controling tost 
+    const stylesToShow = {
+        position: 'absolute',
+        right: '-50px',
+        opacity: 1,
+        transition: 'opacity 500ms ease-in',
+      };
+      const stylesToHide = {
+        position: 'absolute',
+        right: '-50px',
+        opacity: 0,
+        transition: 'opacity 500ms ease-out'
+      };
+
+      let [tost, setTost] = useState(stylesToHide);
+
+
+
 
     const bookMarkHandler = (id, title) =>{
 
@@ -36,10 +57,21 @@ const Main = () => {
         
         let isArray = bookMarkArray.find(singleBookMark => singleBookMark.id === id)
         if(!isArray){
-            setBookMarkArray([...bookMarkArray, newBookMarkArray])
+            setBookMarkArray([...bookMarkArray, newBookMarkArray]);
+            setTost(stylesToShow);
+            setTimeout(()=>{
+                    setTost(stylesToHide)
+                }, 2000 )
+            
+            
+        }
+        
+
+        if(isArray){
+            // setTost(2)
         }
     }
-
+    
 
     const markAsReadHandler = (time) =>{
         console.log(time);
@@ -52,8 +84,12 @@ const Main = () => {
 
     return (
         <div className='md:grid md:grid-cols-12'>
-            <Blog posts={posts} bookMarkHandler={bookMarkHandler} markAsReadHandler={markAsReadHandler}></Blog>
-            <Bookmark bookMarkArray={bookMarkArray} timeSpent={timeSpent}></Bookmark>
+            
+        
+                <Blog posts={posts} bookMarkHandler={bookMarkHandler} markAsReadHandler={markAsReadHandler}></Blog>
+                <Bookmark bookMarkArray={bookMarkArray} timeSpent={timeSpent} tost={tost}></Bookmark>
+            
+            
         </div>
     );
 };
