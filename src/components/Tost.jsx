@@ -17,4 +17,20 @@ const Tost = (props) => {
     );
 };
 
-export default Tost;
+
+
+const TostWarn = (props) => {
+    return (
+        <div style={props.tostWarn} className='transition delay-150 duration-300'>
+            <div className="py-2 px-3 text-right ">
+                <span className="font-bold border rounded-full bg-red-600 text-white shadow-md shadow-amber-300 p-3">
+                    Bookmark already exist !
+                </span>
+            </div>
+        </div>
+    );
+};
+
+
+
+export {Tost, TostWarn};

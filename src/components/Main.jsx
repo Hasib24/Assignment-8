@@ -21,14 +21,16 @@ const Main = () => {
         opacity: 1,
         transition: 'opacity 500ms ease-in',
       };
-      const stylesToHide = {
+    const stylesToHide = {
         position: 'absolute',
         right: '-50px',
         opacity: 0,
         transition: 'opacity 500ms ease-out'
       };
+      
 
       let [tost, setTost] = useState(stylesToHide);
+      let [tostWarn, setTostWarn] = useState(stylesToHide);
 
 
 
@@ -55,7 +57,16 @@ const Main = () => {
         //     }
         // }    
         
-        let isArray = bookMarkArray.find(singleBookMark => singleBookMark.id === id)
+        let isArray = bookMarkArray.find(singleBookMark => singleBookMark.id === id);
+        if(isArray){
+            setTostWarn(stylesToShow);
+                setTimeout(()=>{
+                        setTostWarn(stylesToHide)
+                    }, 2000 )
+
+        }
+            
+
         if(!isArray){
             setBookMarkArray([...bookMarkArray, newBookMarkArray]);
             setTost(stylesToShow);
@@ -87,7 +98,7 @@ const Main = () => {
             
         
                 <Blog posts={posts} bookMarkHandler={bookMarkHandler} markAsReadHandler={markAsReadHandler}></Blog>
-                <Bookmark bookMarkArray={bookMarkArray} timeSpent={timeSpent} tost={tost}></Bookmark>
+                <Bookmark bookMarkArray={bookMarkArray} timeSpent={timeSpent} tost={tost} tostWarn={tostWarn}></Bookmark>
             
             
         </div>

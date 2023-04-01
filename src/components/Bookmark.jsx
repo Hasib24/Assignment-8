@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Tost from './Tost';
+import {Tost, TostWarn} from './Tost';
 
-const Bookmark = ({bookMarkArray, timeSpent, tost}) => {
+const Bookmark = ({bookMarkArray, timeSpent, tost, tostWarn}) => {
     // console.log(bookMarkArray);
     
 
@@ -11,7 +11,7 @@ const Bookmark = ({bookMarkArray, timeSpent, tost}) => {
         <div className='col-span-4 px-2 sticky top-0 h-screen'>
             <div className='border rounded-md bg-slate-100 text-2xl text-blue-700 font-semibold border-blue-700 p-5 mt-5'>Spent time on read : {timeSpent} min</div>
             <div className='p-5 mt-2 bg-slate-100 rounded-md'>
-                <Tost tost={tost}></Tost>
+                <Tost tost={tost}></Tost> <TostWarn tost={tost} tostWarn={tostWarn}></TostWarn>
                 <p className='font-bold text-2xl'>Bookmarked Blog : {bookMarkArray.length}</p>
                 <div>
                     {bookMarkArray.map(singleBookMark =><p key={singleBookMark.id} className='bg-white my-2 p-5 rounded-md'>{singleBookMark.title}</p>)}
