@@ -16,25 +16,28 @@ const Main = () => {
 
         let newBookMarkArray = {id , title};
 
-        if(bookMarkArray.length === 0){
-            setBookMarkArray([...bookMarkArray, newBookMarkArray]);
-
+        // if(bookMarkArray.length === 0){
+        //     setBookMarkArray([...bookMarkArray, newBookMarkArray]);
+        // }
+        // if(bookMarkArray.length > 0){
+        //     console.log(bookMarkArray.length);
+        //     for(const singleMark of bookMarkArray){
+        //         console.log(singleMark.id);
+        //         if(singleMark.id === id){
+        //             console.log(`matched id`);
+        //         }
+        //         if(singleMark.id !== id){
+        //             console.log(`id not matched and bookmark set`);
+        //             setBookMarkArray([...bookMarkArray, newBookMarkArray])
+        //         }
+        //         console.log(bookMarkArray);
+        //     }
+        // }    
+        
+        let isArray = bookMarkArray.find(singleBookMark => singleBookMark.id === id)
+        if(!isArray){
+            setBookMarkArray([...bookMarkArray, newBookMarkArray])
         }
-        if(bookMarkArray.length > 0){
-            // console.log(bookMarkArray.length);
-            for(const singleMark of bookMarkArray){
-
-                // console.log(singleMark.id);
-                if(singleMark.id === id){
-                    console.log(`matched id`);
-                }
-                if(singleMark.id !== id){
-                    console.log(`id not matched and bookmark set`);
-                    setBookMarkArray([...bookMarkArray, newBookMarkArray])
-                }
-                console.log(bookMarkArray);
-            }
-        }      
     }
 
 

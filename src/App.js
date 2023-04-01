@@ -7,7 +7,6 @@ function App() {
       <Header></Header>
       <Main></Main>
       <BlogForQnAndAns></BlogForQnAndAns>
-      
     </div>
   );
 }
